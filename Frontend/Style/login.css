@@ -1,0 +1,26 @@
+:root {
+    --bg: rgba(255, 255, 255, 0.8);
+}
+
+*{
+    margin : 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color:black; 
+}
+
+.container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+
+}
+
+
