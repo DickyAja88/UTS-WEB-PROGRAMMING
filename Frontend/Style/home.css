@@ -1,6 +1,5 @@
 :root{
     --primary: rgba(55, 170, 60, 1);
-    --btnColor: rgba(255, 196, 54, 0.9);
     --linkColor: rgba(1, 146, 103, 1);
 }
 
@@ -100,7 +99,66 @@ body{
     height: 30px;
     width: 82px;
     border-radius: 10px;
-    background-color: var(--btnColor);
+    background-color: var(--primary);
     color: white;
     font-weight: bold;
+}
+.swiper-wrapper{
+    margin-top: 70px;
+    position: relative;
+}
+
+.swiper-slide img {
+    margin-top: 30px;
+    width: 100%;
+    height: 495px;
+    object-fit: cover; 
+}
+
+.swiper-slide .box-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(217, 217, 217, 0.57);
+    padding: 20px;
+    max-width: 979.33px;
+    width: 90%; /* Sesuaikan agar tetap responsif */
+    max-height: 374px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+.swiper-slide .box-content h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.swiper-slide .box-content p {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.swiper-slide .box-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(217, 217, 217, 0.40);
+    width: 60px;
+    height: 60px;
 }

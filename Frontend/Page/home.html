@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
-
-    <!--csss-->
+    <!-- swiper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--css-->
     <link rel="stylesheet" href="../Style/home.css">
 </head>
 <body>
@@ -32,5 +33,61 @@
         </div>
     </nav>
     <!-- Navbar end -->
+
+    <!-- Carousel -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../Asset/pexels-pixabay-270756.jpg" alt="Slide 1">
+                <div class="box-content">
+                    <h1>Penuhilah Hidupmu Dengan Peduli Alam</h1>
+                    <p>Ketahuilah Informasi Dan Berita Terkini Tentang Lingkungan Sekitar, Karena Hidup Kita Bergantung Pada Alam Sekitar</p>
+                    <button>Read more</button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="../Asset/pexels-pixabay-270756.jpg" alt="Slide 2">
+                <div class="box-content">
+                    <h1>Penuhilah Hidupmu Dengan Peduli Alam</h1>
+                    <p>Ketahuilah Informasi Dan Berita Terkini Tentang Lingkungan Sekitar, Karena Hidup Kita Bergantung Pada Alam Sekitar</p>
+                    <button>Read more</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Navigasi Swiper -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
+        
+        <!-- ----- -->
+        
+        <!-- swiper js -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              spaceBetween: 30,
+              centeredSlides: true,
+              autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+              },
+              speed: 1000,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+
+    </div>
 </body>
 </html>
