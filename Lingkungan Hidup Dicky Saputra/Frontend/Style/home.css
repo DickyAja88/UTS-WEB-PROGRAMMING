@@ -1,0 +1,300 @@
+:root{
+    --primary: rgba(55, 170, 60, 1);
+    --linkColor: rgba(1, 146, 103, 1);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+}
+.container-fluid{
+    display: flex;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 9999;
+    padding: 1rem 7%;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img{
+    height: 40px;
+    width: 32px;
+    margin-top: -10px;
+}
+.navbar-brand span{
+    font-family: 'Shrikhand';
+    font-size: 30px;
+    color: var(--primary);
+    margin: 0 auto;
+    
+}
+.container-fluid .nav-link.active{
+    font-weight: bold;
+    color: black;
+}
+.container-fluid .nav-link:hover {
+    font-weight: bold;
+    color: black;
+}
+.d-flex input:hover{
+    border: 3px solid var(--primary);
+    transition: 0.15s linear;
+    font-size: 1rem;
+}
+.d-flex input{
+    background-color: rgb(225,225,225,0.6);
+    box-shadow: 1px;
+}
+/* ========== */
+
+
+/* carousel */
+.swiper-wrapper{
+    margin-top: 42px;
+    position: relative;
+}
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.swiper-slide img {
+    display: block;
+    margin-top: 30px;
+    width: 100%;
+    height: 495px;
+    object-fit: cover; 
+}
+
+.swiper-slide .box-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(217, 217, 217, 0.57);
+    padding: 20px;
+    max-width: 979.33px;
+    width: 90%; 
+    max-height: 374px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+.swiper-slide .box-content h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.swiper-slide .box-content p {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.swiper-slide .box-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .swiper-slide img {
+        height: 405px;
+        max-width: 100%;
+
+    }
+
+    .swiper-slide .box-content h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .swiper-slide .box-content p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .swiper-slide .box-content button {
+        padding: 8px 16px;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+    
+}
+/* ========== */
+
+/* rekomendasi */
+.recomendation{
+    position: relative;
+    z-index: 2;
+    top: 10px;
+    
+}
+
+
+.recomendation .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+}
+.recomendation .head::before, .recomendation .head::after{
+    content: "";
+    flex: 1;
+    border-top: 3px solid var(--primary);
+    margin: 0 10px;
+}
+.container{
+    position: relative;
+    margin-bottom: 100px;
+}
+.card{
+    top: 40px;
+    position: relative;
+    width: 24rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 15px;
+    text-align: justify;
+    
+}
+
+.card-body{
+    padding: 20px;
+}
+
+.card img{
+    max-height: 250px;
+    width: 100%;
+}
+
+.date,
+.comment{
+    font-size: 1rem;
+    text-decoration: none;
+}
+.card a{
+    text-decoration: none;
+    color: var(--linkColor);
+}
+.comment{
+    text-align: right;
+    margin-left: 110px;
+}
+.card-text{
+    margin-top: 10px;
+}
+.btn.btn-primary{
+   color: white; 
+   background-color: var(--primary);
+   border: none;
+}
+.row>*{
+    padding-right: calc(var(--bs-gutter-x) * .4);
+    padding-left: calc(var(--bs-gutter-x) * .4);
+    margin-top: var(--bs-gutter-y);
+
+}
+
+@media screen and (max-width: 900px) {
+    .recomendation {
+        position: relative;
+        margin-top: 20px;
+        
+    }
+    .container{
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .col-4 {
+      flex: 0 0 80%; 
+      max-width: 80%; 
+      margin-bottom: 15px; 
+      
+    }
+    .comment{
+        margin-left: 140px;
+    }
+    .card {
+        position: relative;
+        top: 30px;
+        width: 100%; 
+        margin-left: 50px;
+    }
+  
+    .card img {
+      max-width: 100%;
+      height: auto; 
+      max-height: 200px; 
+    }
+}
+  
+@media screen and (max-width: 767px) {
+    .recomendation{
+        position: relative;
+        top: 10px;
+        bottom: 10px;
+    }
+    .container{
+        position: relative;
+        margin-bottom: 200px;
+    }
+    .card{
+        position: relative;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .col-4 {
+        flex: 0 0 100%; 
+        max-width: 100%; 
+        margin-bottom: 15px; 
+    }
+    .card-body .comment{
+        margin-left: 87px;
+    }
+    .container{
+        margin-bottom: 10px;
+    }
+}
+/* footer */
+[class="text-center text-body-secondary"] img{
+    height: 40px;
+    width: 32px;
+    margin-bottom: 9px;
+}
+[class="text-center text-body-secondary"] span{
+    font-family: 'Shrikhand';
+    font-size: 30px;
+    color: var(--primary);
+}
