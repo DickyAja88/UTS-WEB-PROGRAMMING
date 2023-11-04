@@ -16,17 +16,23 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 1.3rem;
 }
-.container {
+/* .container {
+} */
+
+.center-ariq{
     display: flex;
+    height: 100vh;
+
 }
 
-.container .image {
-    flex: 0;
-}
-
-.image img {
-    display: ;
-    max-width: 
+.container > .image{
+    background-image: url("../Asset/pexels-vojta-kovařík-1275415.jpg");
+    width: 570px;
+    height: auto;
+    /* min-height: 100%; */
+    /* position: relative; */
+    /* background-image: url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+    background-size: cover;
 }
 
 .container .form-login {
